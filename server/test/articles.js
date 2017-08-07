@@ -33,15 +33,15 @@ describe("POST to Articles",function(done){
     }).catch(err=>{})
   })
 
-  // it('Test Controller Input Post articles',function(done){
-  //   axios.post(`http://localhost:3000/articles`,{
-  //     title :'get some testing program'
-  //   }).
-  //   then(function(respon){
-  //     respon.data.title.should.equal('get some testing program')
-  //     done()
-  //   }).catch(err=>{})
-  // })
+  it('Test Controller Input Post articles',function(done){
+    axios.post(`http://localhost:3000/articles`,{
+      title :'get some testing program'
+    }).
+    then(function(respon){
+      respon.data.title.should.equal('get some testing program')
+      done()
+    }).catch(err=>{})
+  })
 })
 
 describe("PUT to Some ID",function(done) {
